@@ -16,8 +16,8 @@ Si possono eseguire le richieste avviando il programma e utilizzando un ambiente
 Alcune info sul funzionamento delle richieste:
 - /GetFiles : basta inserire la richiesta in Postman ed uscirà la lista completa dei files;
 - /StatsType : per decidere se visualizzare i file presenti o cancellati bisogna andare sul body ed inserire "ND" se si vogliono visualizzare i file presenti (not deleted) oppure "D" se si vogliono visualizzare i file cancellati (deleted).
-               Una volta lanciata la richiesta con il comando sul body e andare sulla voce statistics se è stato digitato "ND", altrimenti statisticsDel se è stato digitato "D";
-- /StatsSize : inserire nel body la grandezza di riferimento (in byte) da cui trarre il numero di file che hanno grandezza maggiore di quella digitata;
+               Una volta lanciata la richiesta con il comando sul body andare sulla voce statistics se è stato digitato "ND", altrimenti statisticsDel se è stato digitato "D";
+- /StatsSize : inserire nel body la grandezza di riferimento (in byte) da cui trarre il numero di file che hanno grandezza maggiore di quella digitata, e nella risposta leggere la voce "info" su "SizeStat";
 - /Metadata : visualizza i metadati.
 
 # NOTE 
