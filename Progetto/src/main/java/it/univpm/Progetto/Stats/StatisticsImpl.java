@@ -2,14 +2,21 @@ package it.univpm.Progetto.Stats;
 
 import java.util.ArrayList;
 
-import it.univpm.Progetto.Modelli.Folder;
+import it.univpm.Progetto.Modelli.Element;
 
+/**
+ * The class that calls the Statistics date and Source classes to build the arrayList
+ * that are used to store the Stats information
+ * @author Alessandro Pieragostini
+ *
+ */
 public class StatisticsImpl{
+	
 	
 	private StatisticsSize sizeStat=new StatisticsSize();
 	private StatisticsType TypeStat=new StatisticsType();
 	
-	public ArrayList<String> getSizeStat(ArrayList<Folder> db,String attr,long param){
+	public ArrayList<String> getSizeStat(ArrayList<Element> db,String attr,long param){
 		
 		ArrayList<String> Statistics=new ArrayList<>();
 		
@@ -20,7 +27,7 @@ public class StatisticsImpl{
 		
 	}
 	
-public ArrayList<String> getTypeStat(ArrayList<Folder> db,String attr,String del){
+public ArrayList<String> getTypeStat(ArrayList<Element> db,String attr,String del){
 		
 		ArrayList<String> Statistics=new ArrayList<>();
 		

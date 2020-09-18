@@ -4,8 +4,12 @@ import java.util.ArrayList;
 
 import com.google.common.io.Files;
 
-import it.univpm.Progetto.Modelli.Folder;
-
+import it.univpm.Progetto.Modelli.Element;
+/**
+ * The class used to create the Stat on the type
+ * @author Alessandro Pieragostini
+ *
+ */
 public class StatisticsType {	
 	
 	private static ArrayList<String> Statistics=new ArrayList<String>();
@@ -15,7 +19,7 @@ public class StatisticsType {
 	    return Files.getFileExtension(filename);
 	}
    
-	public static ArrayList<String> getFileTypes(ArrayList<Folder> db, String field,String par) {
+	public static ArrayList<String> getFileTypes(ArrayList<Element> db, String field,String par) {
 	
 	
 		String[] Stamp=new String[5] ;

@@ -2,13 +2,34 @@ package it.univpm.Progetto.Modelli;
 
 import java.util.ArrayList;
 
+/**
+ * The class that creates a metadata element
+ * @author Alessandro PIeragostini
+ *
+ */
 public class MetaData {
+	
+	/**
+	 * Name of the tag
+	 */
 	private String nametag;
+	/**
+	 * An explanation of nametag
+	 */
 	private String info;
+	/**
+	 * Type of nametag
+	 */
 	private String type;
 	
 	private ArrayList<MetaData>	metadata= new ArrayList<>();
 
+	/**
+	 * Constructor
+	 * @param nametag
+	 * @param info
+	 * @param type
+	 */
 	public MetaData(String nametag, String info, String type) {
 		super();
 		this.nametag = nametag;
@@ -16,19 +37,13 @@ public class MetaData {
 		this.type = type;
 	}
 
+	/**
+	 * Constructor
+	 */
 	public MetaData() {
 		super();
 	}
 
-/*
-	public ArrayList<MetaData> ShowMetadata() {
-		 
-		 metadata.add(new MetaData("name", "The name of the file", "String"));
-		 metadata.add(new MetaData(".tag", "If the element is a file, a folder or a deleted element", "String"));
-		 metadata.add(new MetaData("size", "The size of the file", "long"));
-		return metadata;
-	}
-*/
 	/**
 	 * @return the nametag
 	 */

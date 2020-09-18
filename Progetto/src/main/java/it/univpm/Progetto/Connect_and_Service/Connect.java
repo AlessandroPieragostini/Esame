@@ -14,15 +14,24 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
-import it.univpm.Progetto.Modelli.Folder;
+import it.univpm.Progetto.Modelli.Element;
 
-
-
+/**
+ * The class used to download and parse all the data from the API
+ * @author Alessandro Pieragostini
+ *
+ */
 public class Connect {
 	
-	private ArrayList<Folder> data= new ArrayList<>();
+	private ArrayList<Element> data= new ArrayList<>();
 	
-	public ArrayList<Folder> Display_Folders_JSON () throws org.apache.tomcat.util.json.ParseException, IOException {
+	/**
+	 * This method return an ArrayList of all files in the Dropbox account 
+	 * @return
+	 * @throws org.apache.tomcat.util.json.ParseException
+	 * @throws IOException
+	 */
+	public ArrayList<Element> Display_Folders_JSON () throws org.apache.tomcat.util.json.ParseException, IOException {
 
 	
 			
@@ -77,7 +86,7 @@ public class Connect {
 			JSONArray obj= (JSONArray) json.get("entries");
 			
 			for(Object o: obj) {
-				Folder f1 = new Folder();
+				Element f1 = new Element();
 				
 				f1.setName((String) ((JSONObject)o).get("name"));
 				f1.setTag((String)((JSONObject)o).get(".tag"));

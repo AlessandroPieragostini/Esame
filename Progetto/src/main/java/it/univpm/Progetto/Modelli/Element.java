@@ -1,8 +1,23 @@
 package it.univpm.Progetto.Modelli;
 
-public class Folder {
+
+/**
+ * The class that creates an Element object
+ * @author Alessandro Pieragostini
+ *
+ */
+public class Element {
+	/**
+	 * Size of the file, if it is a folder or a deleted file , size is 0
+	 */
 	private long size;
+	/**
+	 * Name of the element
+	 */
 	private String name;
+	/**
+	 * Tag of the element
+	 */
 	private String tag;
 	
 	/**
