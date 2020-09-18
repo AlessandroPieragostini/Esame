@@ -12,7 +12,7 @@ Si possono eseguire le richieste avviando il programma e utilizzando un ambiente
 - POST /StatsSize , visualizza il numero di file superiori ad una certa grandezza data dall' utente;
 - POST /Metadata , ci verranno restituiti i metadati.
 
-# COME UTILIZZARE
+# COME UTILIZZARE LE RICHIESTE
 Alcune info sul funzionamento delle richieste:
 - /GetFiles : basta inserire la richiesta in Postman ed uscirà la lista completa dei files;
 - /StatsType : per decidere se visualizzare i file presenti o cancellati bisogna andare sul body ed inserire "ND" se si vogliono visualizzare i file presenti (not deleted) oppure "D" se si vogliono visualizzare i file cancellati (deleted).
